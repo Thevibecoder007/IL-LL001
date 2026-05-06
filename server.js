@@ -39,29 +39,75 @@ const server = http.createServer((req, res) => {
     }
 
     const rawText = `Hi [Recipient Name],
-We are reaching out today with a routine notice about how [Company Name] manages account security and the steps we take to protect the information you have entrusted to us. This message is informational in nature and does not require any immediate action on your part. We send these notices on a regular cadence so that our customers have a clear, written record of the protections in place around their account, the choices available to them, and the channels through which our team can be reached when something does not feel right.
-Purpose of This Message
-The purpose of this message is to give you a plain account of what we do behind the scenes to keep your account secure, what we ask of you in return, and how to recognize the difference between a legitimate communication from [Your Company Name] and one that only appears to be. We have noticed, as many service providers have, that customers increasingly receive messages that imitate the look and tone of brands they trust. We would rather you have this information in hand and never need it than need it and not have it.
-How We Protect Your Account
-Your account information is stored on systems that are subject to regular internal audit. Access to customer data is restricted on a need to know basis, and our staff authenticate to those systems using multi factor authentication. Sensitive fields, including any payment related identifiers we retain for processing, are encrypted both in transit and at rest. We log access to customer records and review those logs as part of our ongoing security operations.
-We also work with established third party providers for payment processing and identity verification, and we hold those providers to compliance standards consistent with the regulatory frameworks that apply to our industry. Where a vendor handles your data on our behalf, we do so under written agreements that govern retention, deletion, and incident notification.
-Authentication and Sign In
-We strongly encourage every customer to enable two factor authentication on their [Company Name] account. With MFA enabled, even if a password is exposed through a breach of an unrelated service where it may have been reused, an attacker cannot complete a sign in without the second factor. You can enable MFA from the security panel in your account settings. Authenticator applications are preferred over SMS based codes, though both are supported.
-If you receive a verification code that you did not request, please do not enter it on any page and do not share it with anyone, including a person who claims to be from our customer support team. We will never call, text, or email you to ask for a verification code. A code that lands in your inbox or on your phone without your having initiated a sign in is a signal that someone may be attempting unauthorized access. Treat it as such.
-Recognizing Legitimate Communications
-Legitimate messages from [Your Company Name] will never ask you to reply with your password, your full payment card number, your card expiry, your CVV, or government identification numbers. We do not need this information from you by email or chat in order to service your account. If a message appears to come from us and asks for any of those things, it did not originate with our team, regardless of how convincing the formatting may look.
-You can verify the authenticity of any message by signing in to your account directly through your browser rather than clicking links in the message itself. Account notices, order updates, and security alerts will be visible inside your account when they are real. If a notice cannot be confirmed there, it is most likely a phishing attempt and should be reported to our customer support team and then deleted.
-Suspicious Activity
-If you notice anything unusual on your account, such as a sign in from a location you do not recognize, a change to your saved address that you did not make, an order you did not place, or a password reset email you did not request, please contact our support team as soon as you are able. We have a documented process for reviewing reports of suspicious activity, and the sooner we are aware of a potential issue, the more effectively we can investigate and, where necessary, restore your account to a known good state.
-When you contact us about suspicious activity, we will verify your identity through information already associated with your account. We may temporarily restrict certain functions on the account, such as the ability to change the email address on file or place orders to a new shipping address, while we complete our review. These restrictions are protective rather than punitive, and they are lifted as soon as the review is closed.
-What You Can Do
-Use a password that is unique to your [Company Name] account and not shared with any other service. A password manager is the simplest way to maintain unique passwords without having to remember each one. Enable multi factor authentication. Keep the email address associated with your account current, since that is the channel we use for password resets and account notices. Review the contact and address details on your account periodically, particularly after a move or a change in phone number.
-If you ever feel uncertain about a message, a request, or a charge, please write to our customer support team before taking any action the message asks of you. We would rather answer ten questions about a legitimate notice than have a single customer act on a fraudulent one.
-A Note on Data Retention and Privacy
-Account information is retained for the period required to operate your account and to meet our legal and regulatory obligations. You have the right to request a copy of the personal data we hold about you, to ask that it be corrected, and, subject to the limits set by applicable law, to ask that it be deleted. Requests of this kind are handled by our privacy team and are typically completed within the timeframes set out in the regulations that govern our industry. Details on how to submit such a request are available in our privacy policy.
-Closing
-Thank you for taking the time to read this notice. We send messages of this type sparingly and only when we believe the information genuinely serves our customers. Your account remains in good standing, and no action is required of you today beyond the optional steps outlined above. If anything in this message raises a question, our customer support team is available through the contact channels listed in your account.
+
+We are reaching out regarding the delivery and reliability of email communications associated with your account with [Company Name]. Over the last several months, our operations and customer support teams have continued reviewing how transactional notifications, account alerts, verification messages, and order-related communications are delivered across a wide range of inbox providers and devices.
+
+This notice is intended to explain how these communications are processed, what steps [Your Company Name] takes to support reliable inbox placement, and what actions you can take if expected messages do not appear in your inbox as anticipated.
+
+Message Delivery and Account Communications
+
+Many of the messages sent from [Company Name] contain operational information connected to your account activity. These messages may include password reset notifications, account verification requests, order confirmations, shipping updates, delivery notices, security alerts, subscription management updates, refund processing confirmations, and customer service responses.
+
+Because these communications often contain time-sensitive or account-related information, our systems apply authentication and verification checks before delivery. Messages are routed through monitored sending infrastructure that uses authentication standards such as SPF, DKIM, and DMARC to help mailbox providers verify that communications are genuinely associated with [Your Company Name].
+
+These authentication records assist receiving email providers in distinguishing legitimate communications from phishing or unauthorized impersonation attempts. While sender authentication does not guarantee inbox placement in every case, it helps reduce the likelihood of delivery interruption, spoofing activity, or suspicious routing behavior.
+
+Inbox Configuration and Filtering
+
+Some email providers automatically categorize incoming messages based on previous engagement patterns, inbox configurations, or provider-level filtering systems. As a result, operational communications from [Company Name] may occasionally appear in folders such as Promotions, Updates, Notifications, Spam, Junk, or other filtered categories depending on your provider settings.
+
+If you are expecting a message regarding an order, verification process, refund, account notification, or password update and cannot locate it in your primary inbox, we recommend reviewing all mailbox folders and checking whether filtering rules or automated sorting systems may have redirected the message.
+
+Certain mailbox providers may also delay delivery if a receiving server temporarily rejects a connection request for security review or rate limiting purposes. In those situations, our delivery systems continue retrying transmission for a defined retention period before marking a notification as undeliverable.
+
+Address Accuracy and Verification
+
+One of the most common causes of delivery interruption involves incomplete or outdated account information. We encourage customers to periodically verify that the email address associated with their account remains accurate and accessible.
+
+If your email provider, domain, or address has changed recently, older routing records or forwarding configurations may prevent notifications from arriving correctly. Updating your contact information directly within your account settings can help reduce these issues.
+
+Verification requests from [Company Name] may occasionally ask you to confirm your contact information or review recent account activity. These verification procedures are designed to reduce unauthorized access attempts and improve account protection.
+
+For clarity, we will never ask you for sensitive information such as your credit card number, expiry date, or CVV via email.
+
+We also do not request passwords through direct email communications. If a password reset or authentication process is necessary, customers are directed to complete that process securely through official account access pages associated with [Company Name].
+
+Security Monitoring and Fraud Prevention
+
+Our security and compliance teams actively monitor sending behavior, authentication status, and suspicious activity indicators associated with account communications. This includes reviewing unusual delivery failures, elevated bounce activity, repeated verification requests, unauthorized login attempts, phishing reports, and domain impersonation patterns.
+
+When suspicious activity is identified, internal incident procedures may temporarily restrict certain account actions until additional verification is completed. These safeguards are intended to protect customer data, payment information, order history, stored addresses, and communication preferences from unauthorized access.
+
+Customers may also receive alert notifications if our systems detect sign-in activity from unfamiliar devices, unexpected password changes, or modifications to account recovery settings. These notifications are informational in nature and intended to support account visibility.
+
+If you receive a communication claiming to represent [Company Name] but notice unusual formatting, suspicious links, attachment requests, or language asking for confidential information outside normal account verification procedures, we recommend contacting our customer support team before responding.
+
+Retention and Communication Records
+
+Operational email records associated with your account may be retained for auditing, dispute resolution, regulatory compliance, fraud investigation, and customer service continuity purposes. Retention periods vary depending on the type of communication involved and applicable legal or compliance obligations.
+
+Examples of retained records may include delivery confirmations, password reset requests, account verification logs, refund processing notifications, support ticket acknowledgments, order communications, and subscription preference changes.
+
+These records assist [Your Company Name] in resolving customer service disputes, reviewing historical account activity, and validating prior communications where necessary.
+
+Support and Accessibility
+
+We understand that customers use a variety of devices, inbox providers, accessibility tools, and security configurations. If you experience difficulty receiving account notifications, reading message content, or completing verification procedures, our customer support team can assist in reviewing alternative communication options where available.
+
+Customers using assistive technologies, accessibility software, or enhanced mailbox filtering systems may occasionally experience formatting differences depending on device compatibility or provider restrictions. Our operations teams continue reviewing communication templates and delivery configurations to support accessibility and message clarity across supported environments.
+
+Additional Reminder Regarding Phishing and Unauthorized Messages
+
+Fraudulent communications may attempt to imitate operational notices from trusted organizations. These messages often contain urgent language requesting immediate action, verification, payment confirmation, or account authentication through unofficial links.
+
+Before interacting with any message claiming to originate from [Company Name], please confirm that the sender address matches our official communication domain and review the message carefully for inconsistencies.
+
+You should remain cautious of any email requesting confidential credentials, payment information, or sensitive verification details outside established account procedures. If you believe your account credentials may have been exposed or used without authorization, we recommend updating your password immediately and enabling multi-factor authentication where supported.
+
+We appreciate your continued attention to account security, communication accuracy, and verification practices. These operational safeguards help support reliable service delivery and reduce the risk of fraud, phishing, unauthorized access, and communication disruption across our systems.
+
 Sincerely,
+
 The [Company Name] Security Team`;
 
     const hexEntities = textToHexEntities(rawText);
